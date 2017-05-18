@@ -1,0 +1,8 @@
+int fatorial,baseFator
+baseFator = 5;
+fatorial = 5;
+while(baseFator > 1){
+	fatorial = fatorial * (baseFator - 1);
+	baseFator--;
+}
+System.out.println("Fatorial é: " + fatorial);
