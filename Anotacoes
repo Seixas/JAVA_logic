@@ -1,0 +1,98 @@
+SELECT o.OrderID, c.CustomerName, s.ShipperName
+FROM ((Orders AS o
+INNER JOIN Customers AS c ON o.CustomerID = c.CustomerID)
+INNER JOIN Shippers AS s ON o.ShipperID = s.ShipperID)
+WHERE c.CustomerName LIKE 'a%' 
+ORDER BY o.OrderID DESC;
+
+interface possui metodos abstratos, Java 8 pode ter metodos implementados
+
+portlets componentes
+
+java.lang exceptions exemplos
+ArithmeticException; NumberFormatException; IndexOutOfBounds; NullPointerException; e, ClassNotFoundException
+
+Java não tem herança multipla
+
+Switch no java possui BREAK, caso nao ele assume o resto da logica e executa
+
+Existem duas formas de se implementar Threads em java.
+Extendendo a classe Thread.
+Implementando a interface Runnable.
+
+A instrução final indica que a classe, método ou variável assim declarada têm uma única atribuição que se mantém constante, ou seja, não pode ser alterada no decorrer do processamento.
+uma classe não possui filhas se utilizar FINAL
+os métodos que são declarados static são implicitamente final, as classes como final não podem ser estendidas. 
+todas essas opções com X estão erradas
+X um método declarado final em uma superclasse pode ser sobrescrito em uma subclasse.
+X uma classe que é declarada final pode ser uma superclasse.
+X os métodos declarados private não são implicitamente final.
+X nenhum método em uma classe final é implicitamente final.
+
+java.sql pacote java relacionado a BD
+java.lang pacote que é automaticamente importado
+
+na linguagem Java, uma thread executável pode entrar em um determinado estado por um intervalo de tempo especificado, retornando ao estado executável quando for notificada por outra thread ou quando esse intervalo expirar. Essa situação caracteriza o estado espera sincronizada.
+
+no java byte armazena números inteiros de 8 bits, long armazena números inteiros de 64 bits e char armazena caracteres em notação Unicode de 16 bits.
+
+Sobre Java: 
+NÃO é fracamente tipada.
+tem suporte aos principais conceitos de orientação a objetos.
+não tem suporte à herança múltipla.
+tem suporte a aplicações concorrentes.
+funciona independente de plataforma. 
+
+A linguagem de programação Java, em razão de sua portabilidade — uma vez que o compilador Java converte o código fonte em bytecodes, executados por uma máquina virtual — é bastante utilizada para oferecer conteúdos dinâmicos na Web.
+
+Java RMI é um mecanismo para permitir a invocação de métodos que residem em diferentes máquinas virtuais Java (JVM).
+Dessa forma entende-se que os objetos deveriam ser Java rodando em uma JVM.
+
+- A and E are classes
+- B and D are interfaces 
+- C is an abstract class
+class F implements B,D{ }
+
+- A and E are classes
+- B and D are interfaces
+interface F extends B,D{}
+
+Um determinado método da classe A deve poder ser invocado quer tenha sido criada uma instância de A ou não. O modificador que deve obrigatoriamente estar presente na declaração desse método é STATIC
+
+Existem 3 modificadores (private, protected e public), e com isso temos 4 níveis de visibilidade que são:
+(private, default, protected e public)
+Private: A única classe que tem acesso ao atributo é a própria classe que o define, ou seja, se uma classe Pessoa declara um atributo privado chamado nome, somente a classe Pessoa terá acesso a ele.
+Default: Tem acesso a um atributo default (identificado pela ausência de modificadores) todas as classes que estiverem no mesmo pacote que a classe que possui o atributo.
+Protected: Esse é o que pega mais gente, ele é praticamente igual ao default, com a diferença de que se uma classe (mesmo que esteja fora do pacote) estende da classe com o atributo protected, ela terá acesso a ele. Então o acesso é por pacote e por herança.
+Public: Esse é fácil, todos tem acesso.
+
+Em um bloco try{}catch{}finally{} a declaração do bloco finally é sempre executada.
+
+Em Java, as interfaces não podem ter campos de instância, mas permitem a especificação de constantes.
+
+o comando continue tem a função de fazer com que a condição do comando de loop seja novamente testada, mesmo antes de alcançar o ﬁm do comando.
+
+ Integer.parseInt(“10”,2) retorna valor 2; 10,2  - o 2 é para convert em binario
+
+Na linguagem Java, os tipos primitivos são:
+ char, boolean, byte, short, int, long, float e double.
+
+objetos anônimos em Java são úteis quando não se faz necessário instanciar o objeto em uma variável para utilizá-lo.
+
+Amarração (ou binding) é uma associação entre entidades de programação, tais como entre uma variável e seu valor ou entre um identificador e um tipo.
+Amarração estática – Se ocorre antes da execução do programa e permanece inalterada ao longo de toda a execução.
+Amarração dinâmica – Quando a amarração ocorre ou é alterada durante a execução do programa. 
+
+No java as applets rodam no navegador web. 
+
+Para permitir que um mesmo programa seja executado em vários sistemas operacionais, a plataforma Java gera códigos genéricos .class e os traduz para um código específico da máquina local *.bin ou *.exe, somente no momento da execução. Portanto, esses códigos são específicos para a máquina virtual Java e não para a máquina local, sendo conhecidos por: bytecode 
+
+Garbage Collector é a tecnologia que gerencia a memória alocada para o programa, a fim de liberar objetos que não estão sendo utilizados.
+
+deprecation e verbose:
+I. Faz a compilação de código em desuso, geral-mente de versões anteriores e aviso de advertência.
+II. Exibe informações adicionais sobre a compilação
+
+Na interpretação, a máquina virtual Java ou JVM analisa e executa cada instrução do código Bytecode.
+
+Os tipos de dados HashSet, ArrayList e HashMap são classes que implementam os tipos de dados Set, List e Map, respectivamente.
