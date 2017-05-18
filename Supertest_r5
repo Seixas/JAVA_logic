@@ -1,0 +1,20 @@
+class A
+{
+	void metodo (int x)
+	{
+		System.out.println ("x = " + (x-1));
+	}
+}
+
+class B extends A
+{
+	void metodo (int x)
+	{
+		super.metodo (x-1);
+	}
+	public static void main(String[] args)  
+   	{       
+		A y = new B(); 
+     		y.metodo (5);
+	}
+}
