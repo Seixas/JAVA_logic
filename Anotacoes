@@ -96,3 +96,70 @@ II. Exibe informações adicionais sobre a compilação
 Na interpretação, a máquina virtual Java ou JVM analisa e executa cada instrução do código Bytecode.
 
 Os tipos de dados HashSet, ArrayList e HashMap são classes que implementam os tipos de dados Set, List e Map, respectivamente.
+
+Herança
+Reuso de uma classe
+Tudo que foi definido para uma classe vai ser aproveitado em outra classe
+Representa especialização
+Um tipo mais genérico cujas características serão
+herdadas
+por outra classe
+Classe A e classe B
+B herda de A
+B é subtipo de A
+B é subclasse A
+Todos os atributos e métodos definidos em Atambem existem em B
+
+Encapsulamento
+O conceito do encapsulamento consiste em “esconder” os atributos da classe de quem for utilizá-la. Isso se deve por dois motivos principais.
+
+Associação de Classes
+são os relacionamentos entre classes, 
+Herança é representando como "é um", Composição como "tem um"
+Associação -> Por exemplo, quando uma associação entre a classe ?Pessoa? e a classe ?Endereco?, diz que uma pessoa ?tem um? endereço.
+Agregação -> as partes pode existem sem o todo. 
+Composição -> as partes não existem sem o todo
+
+Visibilidade(java)
+ public
+Membros acessíveis por qualquer classe
+ proteced 
+Membros acessíveis por classe esubclasses
+ private
+Membros acessíveis apenas por objetos da própria classe
+ default (pacote)
+Membros acessíveis pode classes domesmo pacoteesubclasse
+
+
+Polimorfismo
+Muda comportamento
+Método executado depende da classe do objeto
+mesma chamada executa métodos diferentes
+obj.metodo() vai executar método que foi definido para
+classe do objeto referenciado
+por obj
+Permite executar métodos de subclasses mesmo sem conhecê-las
+Usado junto com sobrescrita => É possível chamar o método da superclasse
+Palavra super 
+super.metodo();
+Pode ser usado em qualquer método
+Podemos sobrescrever o método para adicionar funcionalidade, mantendo a funcionalidade existente
+
+Classes abstratas
+Não podem ser instanciadas
+Usadas com herança
+Definir superclasse com características e comportamentocomuns e cada subclasse implementa suasespecificidades
+Não existem animais da classe mamífero, apenas desuas subclass
+Métodos podem ser abstratos
+Não possuem implementação
+Devem ser implementados pelas subclasses
+Ou estas também serão abstratas
+Se uma classe possuir pelo menos um métodoabstrato, ela deve ser abstrata
+Classe abstratas podem ter métodos implementados
+
+Classes finais
+Não podem ser herdadas
+Não possuem subclasses
+Não podem ser abstratas
+Por consequencia, não possuemmétodos abstratos
+Palavra final antes de class: public final class Gato{
