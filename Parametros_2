@@ -1,0 +1,23 @@
+import java.lang.Math;
+
+
+public class Teste {
+	public static void main(String args[]) {
+		System.out.println("Saida:");
+		xyz(5, 0);
+	}
+	static int xyz(int n, int m) {
+		int i;
+		for (i = 0; i < m; ++i){
+			System.out.println(" " + i + " ");
+		}
+		System.out.println("xyz(" + n + "," + m + ")");
+		if (n == 1){
+			return 1;
+		}
+		if (n % 2 == 0){
+			return xyz(n / 2, m + 1);
+		}
+		return xyz((n - 1) / 2, m + 1) + xyz((n +1) / 2, m + 1);
+	}
+}
